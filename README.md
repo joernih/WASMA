@@ -1,3 +1,3 @@
 # rwasm_actions
 
-webr::install("cli", repos = "http://username.github.io/my-wasm-repo/")
+webr::install("cli", repos = "https://joernih.github.io/rwasm_actions/")
