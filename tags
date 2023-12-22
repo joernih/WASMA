@@ -8,6 +8,7 @@
 !_TAG_FIELD_DESCRIPTION	name	/tag name/
 !_TAG_FIELD_DESCRIPTION	pattern	/pattern/
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
+!_TAG_FIELD_DESCRIPTION!R	constructor	/function used for making value assigned to the nameattr tag/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
@@ -17,12 +18,22 @@
 !_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
 !_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
 !_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
+!_TAG_KIND_DESCRIPTION!R	L,list	/lists explicitly created with `list()'/
+!_TAG_KIND_DESCRIPTION!R	c,vector	/vectors explicitly created with `c()'/
+!_TAG_KIND_DESCRIPTION!R	d,dataframe	/data frame explicitly created with `data.frame()'/
+!_TAG_KIND_DESCRIPTION!R	f,function	/functions/
+!_TAG_KIND_DESCRIPTION!R	g,globalVar	/global variables having values other than function()/
+!_TAG_KIND_DESCRIPTION!R	l,library	/libraries/
+!_TAG_KIND_DESCRIPTION!R	n,nameattr	/names attribtes in vectors, lists, or dataframes/
+!_TAG_KIND_DESCRIPTION!R	s,source	/sources/
+!_TAG_KIND_DESCRIPTION!R	v,functionVar	/function variables having values other than function()/
 !_TAG_KIND_DESCRIPTION!Yaml	a,anchor	/anchors/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
 !_TAG_PARSER_VERSION!Markdown	0.0	/current.age/
+!_TAG_PARSER_VERSION!R	0.0	/current.age/
 !_TAG_PARSER_VERSION!Yaml	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/home/joernih/numerical/wasm/rwasmactions/	//
@@ -30,5 +41,13 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	6.0.0	/p6.0.20221218.0/
+!_TAG_ROLE_DESCRIPTION!R!library	library	/library attached by library function/
+!_TAG_ROLE_DESCRIPTION!R!library	require	/library attached by require function/
+!_TAG_ROLE_DESCRIPTION!R!source	source	/source loaded by source fucntion/
 !_TAG_ROLE_DESCRIPTION!Yaml!anchor	alias	/alias/
+biler	data-raw/abc.R	/^biler <- read.csv("csv\/biler.csv")$/;"	g
+elbiler	data-raw/abc.R	/^elbiler <- read.csv("csv\/elbiler.csv")$/;"	g
+hello	R/hello.R	/^hello <- function(x=2,y=2) {$/;"	f
+overwrite	data-raw/abc.R	/^usethis::use_data(biler, overwrite = TRUE)$/;"	g
+overwrite	data-raw/abc.R	/^usethis::use_data(elbiler, overwrite = TRUE)$/;"	g
 rwasm_actions	README.md	/^# rwasm_actions$/;"	c
