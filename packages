@@ -1,5 +1,6 @@
 cli
 dplyr
 ggplot2
+shiny
 tidyverse/ggplot2@v3.4.4
 joernih/OEKA201WASMP
