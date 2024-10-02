@@ -4,6 +4,8 @@
 - webr::install("WASMP", repos = "https://joernih.github.io/WASMA/")
 - webr::install("SFB30820Finansteori", repos = "https://joernih.github.io/WASMA/)
 
+- 
+
 
 
 
