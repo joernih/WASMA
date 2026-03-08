@@ -1,0 +1,8 @@
+Package: WASMP
+Type: Package
+Title: Simple WASM Test Package
+Version: 0.0.1
+Authors@R: person("Your", "Name", role = c("aut", "cre"), email = "you@example.com")
+Description: Minimal package for webR/WASM testing.
+License: MIT
+Encoding: UTF-8
