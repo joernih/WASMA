@@ -1,17 +1,17 @@
-# WASMA
-- [WASMA](https://github.com/joernih/WASMA)
+Yes, probably the documentation needs an update. There’s a shinylive update in the queue and after that we can take a look.
+
+In the meantime, you might be able to simply change the line
+    - uses: actions/upload-artifact@v3
+in your GitHub workflow .yaml file to use @v6 instead. In principle nothing else should need to change, but we will see.
+
 - [REPL](https://webr.r-wasm.org/latest/)
   - webr::install("dplyr", repos = "https://joernih.github.io/WASMA/")
   - webr::install("WASMP", repos = "https://joernih.github.io/WASMA/")
 - [Shiny](https://shinylive.io/r/examples/)
 
-
-
 [WASMAP](https://r-wasm.github.io/rwasm/)
 
-
 .github/workflows/deploy.yml
-
 
 The error occurs because **one of your GitHub Actions dependencies internally uses the deprecated `actions/upload-artifact@v3`**. Your workflow downloads `actions/upload-pages-artifact@v2`, which still calls v3 under the hood.
 
@@ -53,7 +53,3 @@ actions/deploy-pages@v2
 3. Commit/push → workflow should pass
 
 This is a common issue since Jan 30, 2025 deprecation—many actions need pinning to non-v3 versions. [github](https://github.com/orgs/community/discussions/152695)
-
-
-
-
